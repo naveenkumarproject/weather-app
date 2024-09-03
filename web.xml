@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>jee6</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  
+  <servlet-mapping>
+  <servlet-name>calling1</servlet-name>
+  <url-pattern>/Callingservlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>calling1</servlet-name>
+  <servlet-class>com.tcl.servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>calling2</servlet-name>
+  <url-pattern>/Callingservlet2</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>calling2</servlet-name>
+  <servlet-class>com.tcl.servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>calling3</servlet-name>
+  <url-pattern>/Callingservlet3</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>calling3</servlet-name>
+  <servlet-class>com.tcl.servlet3</servlet-class>
+  </servlet>
+</web-app>
