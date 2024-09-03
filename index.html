@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>welcome to home page</title>
+	<link rel="stylesheet" href="h2.css">
+</head>
+
+<body>
+	<form action="Callingservlet1" method="post">
+		<label for="username">user name</label>
+		<input type="text" id="username" name="name" required>
+		<br>
+		<br>
+		<label for="number">phone number</label>
+		<input type="tel" id="number" name="phonenumber" pattern="[0-9]{10}" maxlength=10
+			title="please enter exactly 10 digits" required>
+		<br>
+		<br>
+		<label for="email">user email_id</label>
+		<input type="email" id="email" name="email" required>
+		<br>
+		<br>
+		<label for="password">user password</label>
+		<input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&*!=]).{8,}"
+			title="must contain one lower case and one Uppercase and one special Character total 8 characters" required>
+		<br>
+		<br>
+		<Button>sign up</Button>
+		<div class="button-container">
+			<Button onclick="window.location.href='index2.html'">login</Button>
+			<br>
+			<Button onclick="window.location.href='index5.html'">forgot password</Button>
+
+		</div>
+	</form>
+</body>
+
+</html>
