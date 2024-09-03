@@ -36,7 +36,6 @@ public class servlet2 extends HttpServlet{
         	resp.setContentType("text/html");
         	String number1="";
         	String password1="";
-        	String name1="";
         	
       	 try {
    			Class.forName("com.mysql.cj.jdbc.Driver");
@@ -47,11 +46,9 @@ public class servlet2 extends HttpServlet{
    		  if (re.next()) {
               number1 = re.getString("phonenumber");
               password1 = re.getString("password");
-              name1=re.getString("name");
 
               if (number1.equals(number2) && password1.equals(password2)) {
                   out.print("<div class='success-msg'>Login successful!</div>");
-                  out.print("hi<h3>"+ name1+">/h3>");
                   RequestDispatcher rd = req.getRequestDispatcher("index3.html");
                   rd.include(req, resp);
               } else {
